@@ -1,8 +1,11 @@
 import React from 'react'
 import './LoginSignup.css'
-import email_icon from '../../assets/email-icon.png'
-import password_icon from '../../assets/password-icon.png'
-import user_icon from '../../assets/user-icon.png'
+
+import user_icon from '../Assets/user.png'
+import email_icon from '../Assets/Email.png'    
+import password_icon from '../Assets/Lock.png'
+import { useState } from 'react'
+
 
 
 const LoginSignup = () => {
@@ -14,25 +17,30 @@ const LoginSignup = () => {
       </div>
       <div className="Inputs">
         <div className="Input">
-        <img src={user_icon} alt=""/>
-        <input type="text"/>
+        <img src={user_icon} alt="User"/>
+        <input type="text" Placeholder="Username"/>
        </div>
       </div>
       <div className="Inputs">
         <div className="Input">
-        <img src={email_icon} alt=""/>
-        <input type="email"/>
+        <img src={email_icon} alt="Email"/>
+        <input type="email" Placeholder="Email"/>
        </div>
       </div>
       <div className="Inputs">
         <div className="Input">
-        <img src={password_icon} alt=""/>
-        <input type="password"/>
+        <img src={password_icon} alt="Password"/>
+        <input type="password" Placeholder="Password"/>
        </div>
+      </div>
+      <div className="Forget-Password">Lost Password? <span>Click Here!</span></div>
+      <div className="submit-container">
+        <div className="submit">Sign Up</div>
+        <div className="submit">Login</div>
       </div>
     </div>
-  )
+  );
   
-}
+};
 
-
+export default LoginSignup;
