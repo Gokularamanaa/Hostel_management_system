@@ -4,6 +4,7 @@ import './LoginSignup.css'
 import user_icon from '../Assets/user.png'
 import email_icon from '../Assets/Email.png'    
 import password_icon from '../Assets/Lock.png'
+import bgimg_icon from '../Assets/bgimg.jpg'
 import { useState } from 'react'
 
 
@@ -11,7 +12,8 @@ import { useState } from 'react'
 const LoginSignup = () => {
   return (
     <div className="Container">
-      <div className="Header">
+
+        <div className="Header">
         <div className="Text">Sign Up</div>
         <div className="underline"></div>
       </div>
@@ -35,10 +37,11 @@ const LoginSignup = () => {
       </div>
       <div className="Forget-Password">Lost Password? <span>Click Here!</span></div>
       <div className="submit-container">
-        <div className="submit">Sign Up</div>
-        <div className="submit">Login</div>
+        <div className="submit"><button>Sign Up</button></div>
+        <div className="submit"><button>Login</button></div>
       </div>
-    </div>
+      </div>
+    
   );
   
 };
